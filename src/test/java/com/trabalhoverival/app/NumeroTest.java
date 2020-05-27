@@ -12,11 +12,6 @@ import static org.mockito.Mockito.withSettings;
 public class NumeroTest {
   private Numero numero;
 
-  // @BeforeEach
-  // public void setUp() {
-  // numero = new Numero(50);
-  // }
-
   @Test
   public void testNegativeDecrement() {
     numero = new Numero(-7);
