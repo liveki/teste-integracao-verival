@@ -15,20 +15,24 @@ public class Somador {
     public Somador mais(Numero outro) {
         outro = outro.duplica();
         outro = outro.abs();
+
         while (outro.valor() > 0) {
             resultado.inc();
             outro.dec();
         }
+
         return this;
     }
 
     public Somador menos(Numero outro) {
         outro = outro.duplica();
         outro = outro.abs();
+
         while (outro.valor() > 0) {
             resultado.dec();
             outro.dec();
         }
+
         return this;
     }
 
