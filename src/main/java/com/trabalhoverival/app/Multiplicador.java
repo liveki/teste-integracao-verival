@@ -1,26 +1,33 @@
-// package com.trabalhoverival.app;
+package com.trabalhoverival.app;
 
-// public class Multiplicador {
-//     private Somador somador;
-//     public Multiplicador(Somador somador) {
-//         this.somador = somador;
-//     }
-//     public Multiplicador set(Numero valor) {
-//         this.somador.set(valor);
-//         return this;
-//     }
-//     public Multiplicador vezes(Numero outro) {
-//         // verificar se somador tá zerado
-//         if (somador.resultado().valor() == 0) { return this; }
-//         // soma positiva e valor positivo -- abs!
-//         // soma positiva e valor negativo
-//         // soma positivo e valor positivo
+public class Multiplicador {
+  private Somador resultado;
 
-//         Numero aux = outro.duplica();
-//         while (aux.valor() > 0) {
-//             somador.
-//             aux.dec();
-//         }
-//         return this;
-//     }
-// }
+  public Multiplicador(Somador somador) {
+    this.resultado = somador;
+  }
+
+  public Multiplicador set(Numero valor) {
+    this.resultado.set(valor);
+
+    return this;
+  }
+
+  public Multiplicador vezes(Numero outro) {
+    outro = outro.duplica();
+    outro = outro.abs();
+    final int multiplicador = outro.valor();
+
+    for (outro.valor(); outro.valor() > 0; outro.dec()) {
+      for (int j = 0; j < multiplicador; j++) {
+        resultado.resultado().inc();
+      }
+    }
+
+    return this;
+  }
+
+  public Numero resultado() {
+    return resultado.resultado();
+  }
+}

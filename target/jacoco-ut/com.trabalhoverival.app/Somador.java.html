@@ -3,41 +3,41 @@
 public class Somador {
     private Numero resultado;
 
-<span class="nc" id="L6">    public Somador() {</span>
-<span class="nc" id="L7">        this.resultado = new Numero(0);</span>
-<span class="nc" id="L8">    }</span>
+<span class="fc" id="L6">    public Somador() {</span>
+<span class="fc" id="L7">        this.resultado = new Numero(0);</span>
+<span class="fc" id="L8">    }</span>
 
     public Somador set(Numero numero) {
-<span class="nc" id="L11">        this.resultado = numero;</span>
-<span class="nc" id="L12">        return this;</span>
+<span class="fc" id="L11">        this.resultado = numero;</span>
+<span class="fc" id="L12">        return this;</span>
     }
 
     public Somador mais(Numero outro) {
-<span class="nc" id="L16">        outro = outro.duplica();</span>
-<span class="nc" id="L17">        outro = outro.abs();</span>
+<span class="fc" id="L16">        outro = outro.duplica();</span>
+<span class="fc" id="L17">        outro = outro.abs();</span>
 
-<span class="nc bnc" id="L19" title="All 2 branches missed.">        while (outro.valor() &gt; 0) {</span>
-<span class="nc" id="L20">            resultado.inc();</span>
-<span class="nc" id="L21">            outro.dec();</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        while (outro.valor() &gt; 0) {</span>
+<span class="fc" id="L20">            resultado.inc();</span>
+<span class="fc" id="L21">            outro.dec();</span>
         }
 
-<span class="nc" id="L24">        return this;</span>
+<span class="fc" id="L24">        return this;</span>
     }
 
     public Somador menos(Numero outro) {
-<span class="nc" id="L28">        outro = outro.duplica();</span>
-<span class="nc" id="L29">        outro = outro.abs();</span>
+<span class="fc" id="L28">        outro = outro.duplica();</span>
+<span class="fc" id="L29">        outro = outro.abs();</span>
 
-<span class="nc bnc" id="L31" title="All 2 branches missed.">        while (outro.valor() &gt; 0) {</span>
-<span class="nc" id="L32">            resultado.dec();</span>
-<span class="nc" id="L33">            outro.dec();</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        while (outro.valor() &gt; 0) {</span>
+<span class="fc" id="L32">            resultado.dec();</span>
+<span class="fc" id="L33">            outro.dec();</span>
         }
 
-<span class="nc" id="L36">        return this;</span>
+<span class="fc" id="L36">        return this;</span>
     }
 
     public Numero resultado() {
-<span class="nc" id="L40">        return resultado;</span>
+<span class="fc" id="L40">        return resultado;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
