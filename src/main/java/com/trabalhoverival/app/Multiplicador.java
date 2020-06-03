@@ -24,24 +24,24 @@ public class Multiplicador {
     if (outro.valor() == 1) {
       return this;
     }
-    
+
     // mult com 2 negativos
     // mult com 1 negativo
-    Boolean oneNegative = (!(this.resultado.resultado().valor() < 0) && (outro.valor() < 0)) || 
-      ((this.resultado.resultado().valor() < 0) && !(outro.valor() < 0)); // isso é um XOR
-    
-    this.resultado.set(this.resultado.resultado().abs());
-    outro = outro.duplica();
-    outro = outro.abs();
+    Boolean oneNegative = (!(this.resultado.resultado().valor() < 0) && (outro.valor() < 0))
+        || ((this.resultado.resultado().valor() < 0) && !(outro.valor() < 0)); // isso é um XOR
 
-    Integer aux = outro.valor();
-    while (aux >= 0) {
-      resultado.mais(outro);
+    this.resultado.set(this.resultado.resultado().abs());
+
+    Numero toSum = new Numero(resultado.resultado().valor());
+    Integer aux = outro.abs().valor();
+
+    while (aux > 1) {
+      resultado.mais(toSum);
       aux--;
     }
 
     if (oneNegative) {
-      this.resultado.set(new Numero(this.resultado.resultado().valor()*(-1)));
+      this.resultado.set(new Numero(this.resultado.resultado().valor() * (-1)));
     }
 
     return this;
