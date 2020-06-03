@@ -14,14 +14,34 @@ public class Multiplicador {
   }
 
   public Multiplicador vezes(Numero outro) {
+
+    // multiplicação com zero
+    if (resultado.resultado().valor() == 0 || outro.valor() == 0) {
+      this.resultado.set(new Numero(0));
+      return this;
+    }
+    // multiplicação com um
+    if (outro.valor() == 1) {
+      return this;
+    }
+    
+    // mult com 2 negativos
+    // mult com 1 negativo
+    Boolean oneNegative = (!(this.resultado.resultado().valor() < 0) && (outro.valor() < 0)) || 
+      ((this.resultado.resultado().valor() < 0) && !(outro.valor() < 0)); // isso é um XOR
+    
+    this.resultado.set(this.resultado.resultado().abs());
     outro = outro.duplica();
     outro = outro.abs();
-    final int multiplicador = outro.valor();
 
-    for (outro.valor(); outro.valor() > 0; outro.dec()) {
-      for (int j = 0; j < multiplicador; j++) {
-        resultado.resultado().inc();
-      }
+    Integer aux = outro.valor();
+    while (aux >= 0) {
+      resultado.mais(outro);
+      aux--;
+    }
+
+    if (oneNegative) {
+      this.resultado.set(new Numero(this.resultado.resultado().valor()*(-1)));
     }
 
     return this;
