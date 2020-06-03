@@ -77,6 +77,7 @@ public class NumeroTest {
     final int value2 = otherNumber.valor();
 
     Assertions.assertEquals(value1, value2);
+    Assertions.assertFalse(numero == otherNumber);
   }
 
 }

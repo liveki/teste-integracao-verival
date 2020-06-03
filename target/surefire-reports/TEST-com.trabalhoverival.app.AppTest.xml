@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.trabalhoverival.app.AppTest" time="0.03" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.trabalhoverival.app.AppTest" time="0.013" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
     <property name="java.vm.version" value="25.241-b07"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:/Users/marlo/OneDrive/Documents/projetos/testeIntegracao"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:/Users/marlo/OneDrive/Documents/maven/testeIntegracao"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\marlo\OneDrive\Documents\projetos\testeIntegracao"/>
+    <property name="user.dir" value="C:\Users\marlo\OneDrive\Documents\maven\testeIntegracao"/>
     <property name="java.runtime.version" value="1.8.0_241-b07"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:/Program Files/apache-maven-3.6.3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\marlo\bin;C:\Users\marlo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\marlo\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\ProgramData\chocolatey\bin;C:\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Gradle\gradle-6.3-all\gradle-6.3\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\bin;C:\Users\marlo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\marlo\AppData\Roaming\npm;C:\Users\marlo\AppData\Local\Yarn\bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Android\Sdk\platform-tools;C:\Android\Sdk\tools;C:\Gradle\gradle-6.3-all\gradle-6.3\bin;C:\Android\Sdk\platform-tools;C:\Program Files\Docker Toolbox;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\marlo\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\ProgramData\chocolatey\bin;C:\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Gradle\gradle-6.3-all\gradle-6.3\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\Sdk\platform-tools;C:\Program Files\PuTTY;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\bin;C:\Users\marlo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\marlo\AppData\Roaming\npm;C:\Users\marlo\AppData\Local\Yarn\bin;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Android\Sdk\platform-tools;C:\Android\Sdk\tools;C:\Gradle\gradle-6.3-all\gradle-6.3\bin;C:\Android\Sdk\platform-tools;C:\Program Files\Docker Toolbox;."/>
     <property name="maven.conf" value="C:/Program Files/apache-maven-3.6.3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -64,5 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.trabalhoverival.app.AppTest" time="0.027"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.trabalhoverival.app.AppTest" time="0.01"/>
 </testsuite>
