@@ -7,10 +7,10 @@ public class Potencia {
         this.resultado = multiplicador;
     }
 
-    public void potencia(Numero numero) throws IllegalArgumentException {
+    public void potencia(Numero numero) {
         // verifica se a potencia é de zero
         if (numero.valor() == 0) { 
-            resultado.set(new Numero(0));
+            resultado.set(new Numero(1));
         }
         // verifica se a potencia é negativa
         Boolean isNegative = numero.valor() < 0;
