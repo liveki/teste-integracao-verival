@@ -28,17 +28,11 @@ public class Multiplicador {
       return this;
     }
 
-<<<<<<< HEAD
     // valor atual igual a 1 deve retornar o multiplicador
     if (actualValue == 1) {
       this.resultado.set(new Numero(multiplier));
       return this;
     }
-=======
-   
-    Boolean oneNegative = (!(this.resultado.resultado().valor() < 0) && (outro.valor() < 0))
-        || ((this.resultado.resultado().valor() < 0) && !(outro.valor() < 0)); // isso é um XOR
->>>>>>> 09798eb22eb3435da1d28c14cd6eeea37a089985
 
     this.resultado.set(this.resultado.resultado().abs());
 
