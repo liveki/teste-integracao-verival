@@ -57,7 +57,7 @@ public class Multiplicador {
     final int dividend = outro.valor();
     outro = new Numero(outro.abs().valor());
 
-    if (actualValue < dividend) {
+    if (Math.abs(actualValue) < Math.abs(dividend)) {
       this.resultado.set(new Numero(0));
       return this;
     }
@@ -70,8 +70,13 @@ public class Multiplicador {
       this.resultado.menos(outro);
       aux++;
     }
-    
-    this.resultado.set(new Numero(aux));
+
+
+    if ((actualValue > 0 && dividend < 0) || ((actualValue < 0 && dividend > 0))) {
+      this.resultado.set(new Numero(aux*-1));
+    } else {
+      this.resultado.set(new Numero(aux));
+    }
 
     return this;
   }
