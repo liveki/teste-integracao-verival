@@ -14,25 +14,29 @@ public class Multiplicador {
   }
 
   public Multiplicador vezes(Numero outro) {
+    final int actualValue = resultado().valor();
+    final int multiplier = outro.valor();
 
-    // multiplicação com zero
-    if (resultado.resultado().valor() == 0 || outro.valor() == 0) {
+    // multiplicação com zero deve retornar 0
+    if (actualValue == 0 || multiplier == 0) {
       this.resultado.set(new Numero(0));
       return this;
     }
-    // multiplicação com um
-    if (outro.valor() == 1) {
+
+    // multiplicação com um deve retornar o valor atual
+    if (multiplier == 1) {
       return this;
     }
 
-    // mult com 2 negativos
-    // mult com 1 negativo
-    Boolean oneNegative = (!(this.resultado.resultado().valor() < 0) && (outro.valor() < 0))
-        || ((this.resultado.resultado().valor() < 0) && !(outro.valor() < 0)); // isso é um XOR
+    // valor atual igual a 1 deve retornar o multiplicador
+    if (actualValue == 1) {
+      this.resultado.set(new Numero(multiplier));
+      return this;
+    }
 
     this.resultado.set(this.resultado.resultado().abs());
 
-    Numero toSum = new Numero(resultado.resultado().valor());
+    Numero toSum = new Numero(actualValue);
     Integer aux = outro.abs().valor();
 
     while (aux > 1) {
@@ -40,7 +44,8 @@ public class Multiplicador {
       aux--;
     }
 
-    if (oneNegative) {
+    // verifica se um dos valores tem sinal negativo
+    if ((actualValue > 0 && multiplier < 0) || ((actualValue < 0 && multiplier > 0))) {
       this.resultado.set(new Numero(this.resultado.resultado().valor() * (-1)));
     }
 

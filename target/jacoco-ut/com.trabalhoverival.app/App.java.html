@@ -2,7 +2,13 @@
 
 <span class="nc" id="L3">public class App {</span>
     public static void main(String[] args) {
-<span class="nc" id="L5">        System.out.println(&quot;Hello World!&quot;);</span>
-<span class="nc" id="L6">    }</span>
+<span class="nc" id="L5">        Somador somador = new Somador();</span>
+<span class="nc" id="L6">        Multiplicador multiplicador = new Multiplicador(somador);</span>
+<span class="nc" id="L7">        Numero numero = new Numero(-10);</span>
+<span class="nc" id="L8">        multiplicador.set(numero);</span>
+<span class="nc" id="L9">        final Multiplicador resultado = multiplicador.vezes(new Numero(-9));</span>
+
+<span class="nc" id="L11">        System.out.println(resultado.resultado().valor());</span>
+<span class="nc" id="L12">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
