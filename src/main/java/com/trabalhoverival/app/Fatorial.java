@@ -14,15 +14,18 @@ public class Fatorial {
         if (valor.valor() == 0) { 
             this.resultado.set(new Numero(1));
         }
-
-        //
+        resultado.set(valor.duplica());
+        valor.dec();
+        while (valor.valor() > 0) {
+            resultado.vezes(valor);
+            valor.dec();
+        }
 
         return this;
     }
 
-    private Integer fat(Integer val) {
-        if (val <= 1) { return 1; }
-        return val * fat(val-1);
+    public Numero resultado() {
+        return this.resultado.resultado();
     }
 
 }
