@@ -25,8 +25,7 @@ public class Multiplicador {
       return this;
     }
 
-    // mult com 2 negativos
-    // mult com 1 negativo
+   
     Boolean oneNegative = (!(this.resultado.resultado().valor() < 0) && (outro.valor() < 0))
         || ((this.resultado.resultado().valor() < 0) && !(outro.valor() < 0)); // isso é um XOR
 
