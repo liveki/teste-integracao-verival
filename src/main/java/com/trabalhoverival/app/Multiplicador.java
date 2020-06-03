@@ -52,6 +52,30 @@ public class Multiplicador {
     return this;
   }
 
+  public Multiplicador dividido(Numero outro) {
+    final int actualValue = resultado().valor();
+    final int dividend = outro.valor();
+    outro = new Numero(outro.abs().valor());
+
+    if (actualValue < dividend) {
+      this.resultado.set(new Numero(0));
+      return this;
+    }
+
+    this.resultado.set(this.resultado.resultado().abs());
+    Numero toSum = new Numero(actualValue);
+    int aux = 0;
+
+    while (this.resultado.resultado().valor() > 0) {
+      this.resultado.menos(outro);
+      aux++;
+    }
+    
+    this.resultado.set(new Numero(aux));
+
+    return this;
+  }
+
   public Numero resultado() {
     return resultado.resultado();
   }
