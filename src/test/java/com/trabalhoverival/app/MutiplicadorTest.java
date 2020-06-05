@@ -149,8 +149,8 @@ public class MutiplicadorTest {
 
     assertEquals(expected, actual);
   }
-  
-  // Testa se um numero positivo é dividido por um menor e positivo que ele 
+
+  // Testa se um numero positivo é dividido por um menor e positivo que ele
   @Test
   public void divisionWithPositiveDividentGreaterThanPositiveDenominatorTest() {
     numero = new Numero(10);
@@ -163,7 +163,7 @@ public class MutiplicadorTest {
     assertEquals(expected, actual);
   }
 
-  // Testa se um numero negativo é dividido por um menor e positivo que ele 
+  // Testa se um numero negativo é dividido por um menor e positivo que ele
   @Test
   public void divisionWithNegativeDividentGreaterThanPositiveDenominatorTest() {
     numero = new Numero(-10);
@@ -176,7 +176,7 @@ public class MutiplicadorTest {
     assertEquals(expected, actual);
   }
 
-  // Testa se um numero positivo é dividido por um menor e negativo que ele 
+  // Testa se um numero positivo é dividido por um menor e negativo que ele
   @Test
   public void divisionWithPositiveDividentGreaterThanNegativeDenominatorTest() {
     numero = new Numero(10);
@@ -189,7 +189,7 @@ public class MutiplicadorTest {
     assertEquals(expected, actual);
   }
 
-  // Testa se um numero negativo é dividido por um menor e negativo que ele 
+  // Testa se um numero negativo é dividido por um menor e negativo que ele
   @Test
   public void divisionWithNegativeDividentGreaterThanNegativeDenominatorTest() {
     numero = new Numero(-10);
@@ -201,8 +201,8 @@ public class MutiplicadorTest {
 
     assertEquals(expected, actual);
   }
-  
-  // Testa se um numero positivo é dividido por um maior e positivo que ele 
+
+  // Testa se um numero positivo é dividido por um maior e positivo que ele
   @Test
   public void divisionWithPositiveDividentSmallerThanPositiveDenominatorTest() {
     numero = new Numero(2);
@@ -215,7 +215,7 @@ public class MutiplicadorTest {
     assertEquals(expected, actual);
   }
 
-  // Testa se um numero negativo é dividido por um maior e positivo que ele 
+  // Testa se um numero negativo é dividido por um maior e positivo que ele
   @Test
   public void divisionWithNegativeDividentSmallerThanPositiveDenominatorTest() {
     numero = new Numero(-2);
@@ -228,7 +228,7 @@ public class MutiplicadorTest {
     assertEquals(expected, actual);
   }
 
-  // Testa se um numero positivo é dividido por um maior e negativo que ele 
+  // Testa se um numero positivo é dividido por um maior e negativo que ele
   @Test
   public void divisionWithPositiveDividentSmallerThanNegativeDenominatorTest() {
     numero = new Numero(2);
@@ -241,7 +241,7 @@ public class MutiplicadorTest {
     assertEquals(expected, actual);
   }
 
-  // Testa se um numero negativo é dividido por um maior e negativo que ele 
+  // Testa se um numero negativo é dividido por um maior e negativo que ele
   @Test
   public void divisionWithNegativeDividentSmallerThanNegativeDenominatorTest() {
     numero = new Numero(-2);
@@ -253,20 +253,4 @@ public class MutiplicadorTest {
 
     assertEquals(expected, actual);
   }
-  
-
-  // @Test
-  // public void foo_() {
-  //   numero = new Numero(0);
-  //   multiplicador.set(numero);
-  //   Numero outro = new Numero(0);
-
-  //   final int expected = 0;
-  //   final int actual = multiplicador.dividido(outro).resultado().valor();
-
-  //   assertEquals(expected, actual);
-  // }
-
-  
-
 }
