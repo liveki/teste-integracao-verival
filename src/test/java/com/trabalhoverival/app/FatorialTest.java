@@ -53,4 +53,16 @@ public class FatorialTest {
 
     assertEquals(expected, actual);
   }
+
+  @Test
+  public void resultTest() {
+    numero = new Numero(5);
+
+    fatorial.fatorial(numero);
+
+    final int expected = 120;
+    final int actual = fatorial.resultado().valor();
+
+    assertEquals(expected, actual);
+  }
 }
