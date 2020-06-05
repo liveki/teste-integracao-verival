@@ -71,9 +71,8 @@ public class Multiplicador {
       aux++;
     }
 
-
     if ((actualValue > 0 && dividend < 0) || ((actualValue < 0 && dividend > 0))) {
-      this.resultado.set(new Numero(aux*-1));
+      this.resultado.set(new Numero(aux * -1));
     } else {
       this.resultado.set(new Numero(aux));
     }

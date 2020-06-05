@@ -9,7 +9,7 @@ public class Potencia {
 
     public void potencia(Numero numero) {
         // verifica se a potencia é de zero
-        if (numero.valor() == 0) { 
+        if (numero.valor() == 0) {
             resultado.set(new Numero(1));
         }
         // verifica se a potencia é negativa
@@ -23,7 +23,7 @@ public class Potencia {
         }
         // se potencia é negativa, inverte e divide
         if (isNegative) {
-            this.resultado.set(new Numero(1/this.resultado.resultado().valor()));
+            this.resultado.set(new Numero(1 / this.resultado.resultado().valor()));
         }
     }
 
