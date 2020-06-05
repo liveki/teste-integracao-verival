@@ -52,10 +52,14 @@ public class Multiplicador {
     return this;
   }
 
-  public Multiplicador dividido(Numero outro) {
+  public Multiplicador dividido(Numero outro) throws ArithmeticException {
     final int actualValue = resultado().valor();
     final int dividend = outro.valor();
     outro = new Numero(outro.abs().valor());
+
+    if (dividend == 0) {
+      throw new ArithmeticException("Impossible to divide by zero");
+    }
 
     if (Math.abs(actualValue) < Math.abs(dividend)) {
       this.resultado.set(new Numero(0));
